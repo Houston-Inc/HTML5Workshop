@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Houston Day HTML5 Workshop : Guessing Game</title>
+        
+        <style>
+            html, body { margin: 0; padding: 10px; height: 100%; overflow: hidden; }
+            #main { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+            .btn { margin: 10px; padding: 0; text-align: center; box-sizing: border-box; }
+            .control { 
+                display: block; 
+                margin: 0;
+                padding 0;
+                background-color: #009900;
+                border: 1px solid green;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 300px;
+                line-height: 680px;
+            }
+            #next {
+                -webkit-transform: rotate(-180deg); 
+                   -moz-transform: rotate(-180deg); 
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+            }
+            .btn + .btn {
+                margin-top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main" role="main" aria-role="main">
+            <div class="btn">
+                <a href="#" id="prev" class="control">&#x21EA;</a>
+            </div>
+            <div class="btn">
+                <a href="#" id="next" class="control">&#x21EA;</a>
+            </div>
+        <div>
+            <script src="http://10.178.2.156:3000/socket.io/socket.io.js"></script>
+            <script src="js/jquery-1.7.2.js"></script>
+            <script>
+                $(document).ready(function onDocumentReady() {
+                    var socket = io.connect('http://' + location.hostname + ':3000');
+                    $(".control").click(function() {
+                        socket.emit($(this).attr('id'));
+                    });
+                });
+            </script>
+    <body>
+</html>

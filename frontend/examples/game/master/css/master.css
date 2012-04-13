@@ -1,0 +1,54 @@
+* {
+    -webkit-backface-visibility: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    z-index: 200;
+}
+
+#main {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+#main .player {
+    height: 20px;
+    width: 100px;
+    margin-top: 10px;
+    line-height: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    overflow: hidden;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    clear: both;
+    color: #555;
+}
+
+.navbar-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+}
+
+.navbar-search .search-query {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+}
+
+.badge {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+}

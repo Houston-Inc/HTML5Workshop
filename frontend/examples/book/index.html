@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Kickstart</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/book.css">
+        <!-- <script type="text/javascript" src="js/book.js"></script> -->
+    </head>
+    <body>
+        <div id="book" class="container">
+            <header>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+                            <a class="brand" href="#">Demo book : Chapter <span id="current-chapter">1</span></a>
+                            <div class="nav-collapse">
+                                <ul class="nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="icon-book"></i>
+                                            Library 
+                                            <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Demo book</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="icon-list"></i>
+                                            Chapters 
+                                            <b class="caret"></b></a>
+                                        <ul class="dropdown-menu chapters">
+                                            <li><a href="book/chapters/chapter_1.html" data-chapter="1">Chapter 1: What is Houston Kickstart</a</li>
+                                            <li><a href="book/chapters/chapter_2.html" data-chapter="2">Chapter 2: Why your code matters</a></li>
+                                            <li><a href="book/chapters/chapter_3.html" data-chapter="3">Chapter 3: How to participate</a></li>
+                                            <li><a href="book/chapters/chapter_4.html" data-chapter="4">Chapter 4: Reviews</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider-vertical"></li>
+                                    <li><a>Tools:</a></li>
+                                    <li id="bookmark" title="Bookmark this page"><a href="#"><i class="icon-bookmark"></i></a></li>
+                                    <li id="hilight" title="Hilight selected text">
+                                        <a href="#" data-color="yellow">
+                                            <i class="icon-pencil yellow"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown" id="hilight-color" title="Change hilight color">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu colors">
+                                            <li class="active">
+                                                <a href="#" data-color="yellow">
+                                                    <i class="icon-pencil yellow"></i> 
+                                                    Yellow
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-color="green">
+                                                    <i class="icon-pencil green"></i> 
+                                                    Green
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-color="red">
+                                                    <i class="icon-pencil red"></i> 
+                                                    Red
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-color="orange">
+                                                    <i class="icon-pencil orange"></i> 
+                                                    Orange
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="hilights-toggle" title="Toggle hilights"><a href="#"><i class="icon-edit"></i></a></li>
+                                    <!-- <li id="comments" title="Show my comments"><a href="#"><i class="icon-comments"></i></a></li> -->
+                                </ul>
+                                <ul class="nav pull-right">
+                                    <li class="divider-vertical"></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span id="bookmark-count" class="badge badge-success">0</span> 
+                                            <i class="icon-bookmark"></i>
+                                            Bookmarks 
+                                            <b class="caret"></b></a>
+                                        <ul id="bookmark-menu" class="dropdown-menu">
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- <form class="navbar-search pull-right" action="">
+                                    <input type="text" class="search-query span2" placeholder="Search">
+                                </form> -->
+                            </div><!-- /.nav-collapse -->
+                        </div>
+                    </div><!-- /navbar-inner -->
+                </div>
+            </header>
+            <div id="main" role="main">
+                <div id="floater">
+                    <div id="chapter">
+                        <div id="viewport">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="prev-page">&laquo;</div>
+            <div id="next-page">&raquo;</div>
+            <div class="modal" id="comments">
+                <div class="modal-header">
+                    <a class="close pull-right" id="close-comments">&times;</a>
+                    <h3>Comments</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="hilight-text">
+                    </div>
+                    <div id="hilight-comments">
+                        <div class="hilight-comment alert alert-info">
+                            No comments yet
+                        </div>
+                    </div>
+                    <div id="hilight-add-comment">
+                        <textarea></textarea>
+                        <a href="#" id="add-comment" class="btn pull-right">Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+        <script src="js/jquery-1.7.2.js"></script>
+        <script src="js/jquery.animate-enhanced.min.js"></script>
+        <script src="js/jstorage.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/book.js"></script>
+    </body>
+</html>

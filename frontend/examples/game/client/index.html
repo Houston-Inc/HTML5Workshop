@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Houston Day HTML5 Workshop : Guessing Game</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/client.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="brand" href="#">Houston Day HTML5 Workshop : Guessing Game</a>
+                        <ul class="nav pull-right">
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Players 
+                                    <span id="players" class="badge badge-success">0</span> 
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="navbar-search pull-right" action="#" id="player-name-form">
+                            <input id="player-name" type="text" placeholder="Nickname" autocomplete="off" />
+                        </form>
+                    </div>
+                </div><!-- /navbar-inner -->
+            </div>
+        </header>
+        <div id="main" role="main">
+            Welcome to Guessing Game. Wait for the Game Master to start the game!
+        </div>
+        <footer>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <form class="navbar-search pull-right" action="#" id="answer-form">
+                            <input id="answer" type="text" placeholder="Answer" autocomplete="off" />
+                        </form>
+                    </div>
+                </div><!-- /navbar-inner -->
+            </div>
+        </footer>
+        <script src="js/jquery-1.7.2.js"></script>
+        <script src="http://kaizensoup.dev:3000/socket.io/socket.io.js"></script>
+        <script src="js/client.js"></script>
+    </body>
+</html>

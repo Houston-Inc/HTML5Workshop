@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'AngelicWarRegular';
+    src: url('/presentation/css/fonts/angelicwar-webfont.eot');
+    src: url('/presentation/css/fonts/angelicwar-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/presentation/css/fonts/angelicwar-webfont.woff') format('woff'),
+         url('/presentation/css/fonts/angelicwar-webfont.ttf') format('truetype'),
+         url('/presentation/css/fonts/angelicwar-webfont.svg#AngelicWarRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TurntablzBBRegular';
+    src: url('/presentation/css/fonts/turnb___-webfont.eot');
+    src: url('/presentation/css/fonts/turnb___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/presentation/css/fonts/turnb___-webfont.woff') format('woff'),
+         url('/presentation/css/fonts/turnb___-webfont.ttf') format('truetype'),
+         url('/presentation/css/fonts/turnb___-webfont.svg#TurntablzBBRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'PointsWestNFRegular';
+    src: url('/presentation/css/fonts/pointswestnf-webfont.eot');
+    src: url('/presentation/css/fonts/pointswestnf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/presentation/css/fonts/pointswestnf-webfont.woff') format('woff'),
+         url('/presentation/css/fonts/pointswestnf-webfont.ttf') format('truetype'),
+         url('/presentation/css/fonts/pointswestnf-webfont.svg#PointsWestNFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    font-size: 100%;
+    overflow: hidden;
+}
+body {
+    font-size: 62.5%;
+    line-height: 2em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+article {
+    position: relative;
+    margin: 2em;
+    border-radius: 5px;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    background-color: lightgreen;
+    box-sizing: border-box;
+}
+
+article h1 {
+    display: inline-block;
+    margin-left: 1em;
+    margin-top: -20px;
+    padding: 0 0.25em;
+    font-size: 4em;
+    line-height: 1.25em;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: 1px solid green;
+    font-weight: normal;
+    font-family: 'TurntablzBBRegular', Helvetica, Arial, sans-serif;
+}
+
+article h2 {
+    font-size: 6em;
+    line-height: 1.333em;
+    margin: 0;
+    padding: 0 1.333em;
+}
+
+article p {
+    font-size: 3em;
+    line-height: 1.333em;
+    padding: 0 0.667em;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+article p.intro {
+    text-align: center;
+    font-size: 10em;
+    font-family: 'AngelicWarRegular', 'Times New Roman', serif;
+    background: transparent url(/presentation/images/HTML5_Logo_256.png) no-repeat center;
+}
+
+article ul {
+    margin: 0 1em 0 5em;
+    padding: 0;
+}
+
+article ul li {
+    font-size: 3em;
+    line-height: 1.333em;
+    padding: 0 0.667em 0 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+article blockquote {
+    font-size: 3em;
+    line-height: 1.333em;
+    padding: 0 0.667em;
+}
+
+blockquote::before {
+    content: '"';
+}
+blockquote::after {
+    content: '"';
+}
+
+article pre {
+    font-size: 4em;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+article footer {
+    position: absolute;
+    bottom: -0.667em;
+    right: 0.5em;
+    padding: 0 0.333em;
+    font-size: 3em;
+    line-height: 1.333em;
+    background-color: white;
+    border-top: 1px solid green;
+    border-radius: 5px;
+    color: gray;
+    font-family: 'PointsWestNFRegular', Helvetica, Arial, sans-serif;
+}
